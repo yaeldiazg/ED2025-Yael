@@ -9,9 +9,18 @@ La evaluación del curso será la siguiente:
 
 | Equivalencia |       Apartado     |
 |:------------:|:------------------:|
-|      45%     | Examen teorico     |
+|      45%     | Exámenes teóricos* |
 |      30%     | Tareas y programas |
 |      25%     | Proyecto final     |
+
+* el examen teórico se compone de 3 exámenes en el cual se contemplan
+
+| Equivalencia | Examen         | Temas                                                                                                                                    | Comentarios           |   |
+|--------------|----------------|------------------------------------------------------------------------------------------------------------------------------------------|-----------------------|---|
+| 15%          | Primer examen  | Unidad 1. Introducción a los algoritmos de estructuras de datos Unidad 2. Almacenamiento estático, dinámico y estructuras elementales | Mínimo aprobatorio 7 |   |
+| 15%          | Segundo examen | Unidad 3. Estructuras de datos lineales y no lineales                                                                                    | Mínimo aprobatorio 7 |   |
+| 15%          | Tercer examen  | Unidad 4. Técnicas de ordenamiento y búsqueda                                                                                          | Mínimo aprobatorio 7 |   |
+
 
 Las actividades de IBM, no son parte de la evaluación, pero si requisito para la colocación en actas de la calificación final.
 
