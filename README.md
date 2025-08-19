@@ -16,11 +16,10 @@ La evaluación del curso será la siguiente:
 * el examen teórico se compone de 3 exámenes en el cual se contemplan
 
 | Equivalencia | Examen         | Temas                                                                                                                                    | Comentarios          |
-|--------------|----------------|-----------------------------------------------------------------------|----------------------|
-| 15%          | Primer examen  | Unidad 1. Introducción a los algoritmos de estructuras de datos\      | Mínimo aprobatorio 7 |
-|              |                | Unidad 2. Almacenamiento estático, dinámico y estructuras elementales |                      |
-| 15%          | Segundo examen | Unidad 3. Estructuras de datos lineales y no lineales                 | Mínimo aprobatorio 7 |
-| 15%          | Tercer examen  | Unidad 4. Técnicas de ordenamiento y búsqueda                         | Mínimo aprobatorio 7 |
+|--------------|----------------|------------------------------------------------------------------------------------------------------------------------------------------|----------------------|
+| 15%          | Primer examen  | Unidad 1. Introducción a los algoritmos de estructuras de datos<br/>Unidad 2. Almacenamiento estático, dinámico y estructuras elementales    | Mínimo aprobatorio 7 |
+| 15%          | Segundo examen | Unidad 3. Estructuras de datos lineales y no lineales                                                                                    | Mínimo aprobatorio 7 |
+| 15%          | Tercer examen  | Unidad 4. Técnicas de ordenamiento y búsqueda                                                                                            | Mínimo aprobatorio 7 |
 
 Las actividades de IBM, no son parte de la evaluación, pero si requisito para la colocación en actas de la calificación final.
 
@@ -55,9 +54,7 @@ data_structure/
 ```
 
 ## Fechas de entrega de tareas
-| Tarea | Fecha de entrega | Actividad                                                                                                                                                                                                                                                                                        |
-|-------|------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1     | 22/08/2025       | Video Ingenieros de Netflix descubren un fallo en la JVM (Java Virtual Machine)  Realice el resumen del video https://www.youtube.com/watch?v=po5d5Zdzwt0 e indique qué relación tiene con la materia.  Los puntos que deber'a considerar para la entrega de la actividad son los siguientes:  * |
+
 
 ### Entrega de programas y actividades
 La entrega de los programas se realiza mediante git, por lo que deberán crear su propio repositorio. Favor de anotarlo en el siguiente documento: https://docs.google.com/spreadsheets/d/1oegFOw-DP5K7uelXgrO4_7Y4_BgwrmD1NpTVrO0Zbb8/edit?usp=sharing
