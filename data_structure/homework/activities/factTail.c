@@ -27,6 +27,6 @@ int main(int argc, char *argv[]){
 	int n = atoi(num);
 	int f = factTail(n, 1);
 	
-	printf("Factorial de %d = %d",n,f);
+	printf("Factorial de %d = %d\n",n,f);
 	return 0;
 }

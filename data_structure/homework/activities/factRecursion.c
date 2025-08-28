@@ -27,6 +27,6 @@ int main(int argc, char *argv[]){
 	int n = atoi(num);
 	int f = factRecursion(n);
 	
-	printf("Factorial de %d = %d",n,f);
+	printf("Factorial de %d = %d\n",n,f);
 	return 0;
 }
