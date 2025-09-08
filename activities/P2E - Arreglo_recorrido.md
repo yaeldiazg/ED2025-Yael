@@ -7,4 +7,4 @@ Realice el programa que dada una matriz de $n*m$, en donde el usuario introducir
 
  3. Realice el recorrido en diagonal desde la casilla 00, 11, 22, 33, siempre que $n=m$, considere el caso donde $n \ne m$, $n \lt m$ o $n \gt m$
 
-![diagram0](./Resources/recorridos_mat_e.png) 
+![diagram0](./resources/recorridos_mat_e.png) 
