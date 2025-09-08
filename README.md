@@ -68,22 +68,22 @@ data_structure/
 | Programa          | 2. Programas de arreglos unidimensionales estáticos |
 |-------------------|------------------------------------|
 | Fecha de entrega  | 12/09/2025                         |
-| Programas         | Favor de revisar el documento [P2E - Arreglos_unidimensionales.md]() que puede ser consultado en la carpeta de actividades |
+| Programas         | Favor de revisar el documento [P2E - Arreglos_unidimensionales.md](./activities/P2E%20-%20Arreglos_unidimensionales.md) que puede ser consultado en la carpeta de actividades |
 
 | Programa          | 3. Programas de recorridos en arreglos bidimensionales |
 |-------------------|------------------------------------|
 | Fecha de entrega  | 17/09/2025                         |
-| Programas         | Favor de revisar el documento [P2E - Arreglo_recorrido.md]() que puede ser consultado en la carpeta de actividades |
+| Programas         | Favor de revisar el documento [P2E - Arreglo_recorrido.md](./activities/P2E%20-%20Arreglo_recorrido.md) que puede ser consultado en la carpeta de actividades |
 
 | Programa          | 4. Programas de arreglos bidimensionales dinámico  |
 |-------------------|------------------------------------|
 | Fecha de entrega  | 17/09/2025                         |
-| Programas         | Favor de revisar el documento [P2E - Arreglos_bidimensionales.md]() que puede ser consultado en la carpeta de actividades |
+| Programas         | Favor de revisar el documento [P2E - Arreglos_bidimensionales.md](./activities/P2E%20-%20Arreglos_bidimensionales.md) que puede ser consultado en la carpeta de actividades |
 
 | Programa          | 5. Programas de arreglos variables bidimensionales dinámicos  |
 |-------------------|------------------------------------|
 | Fecha de entrega  | 17/09/2025                         |
-| Programas         | Favor de revisar el documento [P2E - Arreglos_dinamicos_variables.md]() que puede ser consultado en la carpeta de actividades |
+| Programas         | Favor de revisar el documento [P2E - Arreglos_dinamicos_variables.md](./activities/P2E%20-%20Arreglos_dinamicos_variables.md) que puede ser consultado en la carpeta de actividades |
 
 
 La entrega de los programas se realiza mediante git, por lo que deberán crear su propio repositorio. Favor de anotarlo en el siguiente documento: https://docs.google.com/spreadsheets/d/1oegFOw-DP5K7uelXgrO4_7Y4_BgwrmD1NpTVrO0Zbb8/edit?usp=sharing
