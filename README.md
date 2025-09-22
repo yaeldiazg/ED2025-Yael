@@ -85,6 +85,16 @@ data_structure/
 | Fecha de entrega  | 17/09/2025                         |
 | Programas         | Favor de revisar el documento [P2E - Arreglos_dinamicos_variables.md](./activities/P2E%20-%20Arreglos_dinamicos_variables.md) que puede ser consultado en la carpeta de actividades |
 
+| Programa          | 6. Programa lista de ligadura sencilla  |
+|-------------------|------------------------------------|
+| Fecha de entrega  | 26/09/2025                         |
+| Programas         | Favor de revisar el documento [P3E - Lista_ligadura_sencilla.md](./activities/P3E%20-%20Lista_ligadura_sencilla.md) que puede ser consultado en la carpeta de actividades |
+
+| Programa          | 7. Programa lista de ligadura doble  |
+|-------------------|------------------------------------|
+| Fecha de entrega  | 26/09/2025                         |
+| Programas         | Favor de revisar el documento [P3E - Lista_ligadura_doble.md](./activities/P3E%20-%20Lista_ligadura_doble.md) que puede ser consultado en la carpeta de actividades |
+
 
 La entrega de los programas se realiza mediante git, por lo que deberán crear su propio repositorio. Favor de anotarlo en el siguiente documento: https://docs.google.com/spreadsheets/d/1oegFOw-DP5K7uelXgrO4_7Y4_BgwrmD1NpTVrO0Zbb8/edit?usp=sharing
 
