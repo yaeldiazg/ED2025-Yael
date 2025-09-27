@@ -43,7 +43,7 @@ int main (int argc, char **argv) {
     // Initialize the linked list
     list_init(&list, free);
 
-    // Fill the linked list con 27 letras del alfabeto
+    // Fill the linked list with all the letters of the alphabet
     node = list_head(&list);
     for (i = 0; i < 26; i++) {
 
