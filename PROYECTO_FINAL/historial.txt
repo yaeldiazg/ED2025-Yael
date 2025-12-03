@@ -1,3 +1,14 @@
 Expresion: 345*12-24*4/5
 Tipo: Infix -> Postfix
 Resultado: 5 4 / -24 12 * 345 * 
+====================================
+OPERACIÓN ORIGINAL:
+235-12*126+67/8
+
+CONVERSIÓN REALIZADA:
+Infix -> Postfix
+
+RESULTADO FINAL:
+8 67 / 126 -12 235 * + 
+====================================
+

@@ -3,6 +3,7 @@
 #include <string.h>
 #include "parser.h"
 #include "stack.h"
+#include "utils.h"
 #include "infix_to_postfix.h"
 #include "infix_to_prefix.h"
 #include "postfix_to_infix.h"
@@ -24,46 +25,40 @@ void print_help() {
     printf("  -x2p      Prefix -> Postfix\n");
 }
 
-/* Función para guardar resultados en historial */
-void save_result(const char *expr, const char *tipo, const char *resultado) {
-    char *historial = NULL;
-    read_file("historial.txt", &historial);
-
-    char buffer[2048];
-    if (historial) {
-        snprintf(buffer, sizeof(buffer), "%s\nExpresion: %s\nTipo: %s\nResultado: %s\n",
-                 historial, expr, tipo, resultado);
-        free(historial);
-    } else {
-        snprintf(buffer, sizeof(buffer), "Expresion: %s\nTipo: %s\nResultado: %s\n",
-                 expr, tipo, resultado);
-    }
-    write_file("historial.txt", buffer);
-}
-
-/* Función para validar paréntesis balanceados */
+/* Validación de paréntesis */
 int validate_parentheses(List *tokens) {
     Stack s;
     stack_init(&s);
 
     for (ListNode *elmt = list_head(tokens); elmt != NULL; elmt = list_next(elmt)) {
-        char *t = (char*)list_data(elmt);
+        char *t = (char*) list_data(elmt);
+
         if (t[0] == '(') {
-            stack_push(&s, t);
-        } else if (t[0] == ')') {
-            if (stack_peek(&s) && stack_peek(&s)[0] == '(') {
-                free(stack_pop(&s));  // Pop '('
-            } else {
+            stack_push(&s, "(");
+        }
+        else if (t[0] == ')') {
+            char *top = stack_pop(&s);
+
+            if (!top) {
                 stack_destroy(&s);
-                return 0;  // Desbalanceado
+                return 0;
             }
+
+            free(top);
         }
     }
 
-    int balanced = list_size(&s.list) == 0;
+    int balanced = (list_size(&s.list) == 0);
+
+    while (list_size(&s.list) > 0) {
+        char *d = stack_pop(&s);
+        if (d) free(d);
+    }
+
     stack_destroy(&s);
     return balanced;
 }
+
 
 int main(int argc, char *argv[]) {
     if (argc < 2) {
@@ -76,7 +71,7 @@ int main(int argc, char *argv[]) {
         return 0;
     }
 
-    char expr[256];
+    char expr[1024];
     printf("Ingrese expresion: ");
     if (!fgets(expr, sizeof(expr), stdin)) {
         fprintf(stderr, "Error leyendo la expresion\n");
@@ -90,16 +85,15 @@ int main(int argc, char *argv[]) {
         return 1;
     }
 
-    // Validar paréntesis antes de hacer la conversión
     if (!validate_parentheses(tokens)) {
-        fprintf(stderr, "Error: paréntesis desbalanceados\n");
+        fprintf(stderr, "Error: parentesis desbalanceados\n");
         list_destroy(tokens);
         free(tokens);
         return 1;
     }
 
     char *resultado = NULL;
-    char tipo[32];
+    char tipo[64];
 
     if (strcmp(argv[1], "-i2p") == 0) {
         strcpy(tipo, "Infix -> Postfix");
@@ -126,7 +120,7 @@ int main(int argc, char *argv[]) {
 
     if (resultado) {
         printf("Resultado (%s): %s\n", tipo, resultado);
-        save_result(expr, tipo, resultado);
+
         free(resultado);
     } else {
         fprintf(stderr, "Error: conversion invalida\n");
