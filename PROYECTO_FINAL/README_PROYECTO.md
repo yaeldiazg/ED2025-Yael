@@ -55,5 +55,4 @@ Para mostrar la ayuda:
 ./calc.exe -h
 
 Historial de resultados:
-
 Todos los resultados se guardan en historial.txt, incluyendo la expresión, tipo de conversión y resultado.
