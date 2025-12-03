@@ -4,7 +4,7 @@ Este proyecto es una calculadora en **C** que permite convertir y evaluar expres
 
 ## Integrantes del proyecto
 
-- **Yael Eduardo Díaz Gómez** [Número de cuenta: 322505188]  
+- **Díaz Gómez Yael Eduardo** [Número de cuenta: 322505188]  
 - **Hernández Netzahuatl Diego** [Número de cuenta: 425094006]  
 
 ## Funcionalidades
