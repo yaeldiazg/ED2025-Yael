@@ -1,0 +1,3 @@
+Expresion: 345*12-24*4/5
+Tipo: Infix -> Postfix
+Resultado: 5 4 / -24 12 * 345 * 
