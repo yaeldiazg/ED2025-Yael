@@ -7,14 +7,15 @@
 #include "postfix_to_prefix.h"
 #include "postfix_to_infix.h"
 #include "infix_to_prefix.h"
+#include "file_manager.h"
 
 char *postfix_to_prefix(List *tokens) {
     char *infix = postfix_to_infix(tokens);
-    printf("Convertido postfix -> infix: %s\n", infix);
+    history_printf("Convertido postfix -> infix: %s\n", infix);
 
     List *tokenized = tokenize(infix);
     char *prefix = infix_to_prefix(tokenized);
-    printf("Convertido infix -> prefix: %s\n", prefix);
+    history_printf("Convertido infix -> prefix: %s\n", prefix);
 
     free(infix);
     return prefix;

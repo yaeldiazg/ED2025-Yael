@@ -6,6 +6,7 @@
 #include "utils.h"
 #include "prefix_to_infix.h"
 #include "postfix_to_infix.h"
+#include "file_manager.h"
 
 char *prefix_to_infix(List *tokens) {
     List reversed;
@@ -15,7 +16,7 @@ char *prefix_to_infix(List *tokens) {
     while (elmt != NULL) {
         char *copy = my_strdup(list_data(elmt));
         list_ins_next(&reversed, NULL, copy);
-        printf("Invertido token: %s\n", copy);
+        history_printf("Invertido token: %s\n", copy);
         elmt = list_next(elmt);
     }
 

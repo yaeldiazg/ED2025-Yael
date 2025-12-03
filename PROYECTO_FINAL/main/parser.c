@@ -29,11 +29,6 @@ List* tokenize(const char *expr) {
         if (expr[i] == '(' || expr[i] == ')') {
             char current = expr[i];
 
-            /* ----- MULTIPLICACIÓN IMPLÍCITA -----
-               Si el token anterior fue "numero" o ")"
-               y el actual es "("
-               entonces insertamos un "*"
-            */
             if (current == '(' && 
                 (isdigit(last_token[0]) || last_token[0] == ')')) {
 
@@ -76,9 +71,6 @@ List* tokenize(const char *expr) {
             tok[size] = 0;
             list_ins_next(tokens, list_tail(tokens), tok);
 
-            /* Detectar multiplicación implícita cuando
-               un número es seguido por "("
-            */
             strcpy(last_token, tok);
             continue;
         }

@@ -1,14 +1,35 @@
-Expresion: 345*12-24*4/5
-Tipo: Infix -> Postfix
-Resultado: 5 4 / -24 12 * 345 * 
-====================================
-OPERACIÓN ORIGINAL:
-235-12*126+67/8
-
-CONVERSIÓN REALIZADA:
-Infix -> Postfix
-
-RESULTADO FINAL:
-8 67 / 126 -12 235 * + 
-====================================
-
+Ingrese expresion: Token actual: -
+Push operador a pila: -
+Token actual: 25
+Añadido a resultado: 25 
+Token actual: *
+Push operador a pila: *
+Token actual: (
+Push '(' a pila
+Token actual: 78
+Añadido a resultado: 25 78 
+Token actual: -
+Push operador a pila: -
+Token actual: 12
+Añadido a resultado: 25 78 12 
+Token actual: *
+Push operador a pila: *
+Token actual: 56
+Añadido a resultado: 25 78 12 56 
+Token actual: )
+Pop de pila: * -> resultado: 25 78 12 56 * 
+Pop de pila: - -> resultado: 25 78 12 56 * - 
+Pop de '(' de pila
+Token actual: -
+Pop de pila por precedencia: * -> resultado: 25 78 12 56 * - * 
+Pop de pila por precedencia: - -> resultado: 25 78 12 56 * - * - 
+Push operador a pila: -
+Token actual: 67
+Añadido a resultado: 25 78 12 56 * - * - 67 
+Token actual: /
+Push operador a pila: /
+Token actual: 8
+Añadido a resultado: 25 78 12 56 * - * - 67 8 
+Pop final de pila: / -> resultado: 25 78 12 56 * - * - 67 8 / 
+Pop final de pila: - -> resultado: 25 78 12 56 * - * - 67 8 / - 
+Resultado (Infix -> Postfix): 25 78 12 56 * - * - 67 8 / - 

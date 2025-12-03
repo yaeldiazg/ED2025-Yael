@@ -8,15 +8,16 @@
 #include "utils.h"
 #include "list.h"
 #include "parser.h"
+#include "file_manager.h"
 
 char* infix_to_prefix(List *tokens) {
     List reversed;
     list_init(&reversed, free);
 
-    printf("Invirtiendo tokens para prefix\n");
+    history_printf("Invirtiendo tokens para prefix\n");
     for (ListNode *elmt = list_tail(tokens); elmt != NULL; elmt = list_prev(tokens, elmt)) {
         char *copy = my_strdup((char*)list_data(elmt));
-        printf("Token invertido: %s\n", copy);
+        history_printf("Token invertido: %s\n", copy);
         list_ins_next(&reversed, NULL, copy);
     }
 
